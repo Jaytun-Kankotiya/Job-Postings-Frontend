@@ -32,8 +32,6 @@ const JobPostings = () => {
     fetchJobPostings();
   }, []);
 
-  console.log(jobs);
-
   if (loading) return <p className="d-flex align-items-center justify-content-center text-center fs-2 py-5">Loading...</p>;
   if (!jobs) return <p className="text-center py-5">Job not found.</p>;
 

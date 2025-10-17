@@ -1,5 +1,6 @@
 import axios from "axios";
 import { createContext, useContext, useState } from "react";
+import { toast } from "react-toastify";
 
 const JobContext = createContext();
 export const useJobContext = () => useContext(JobContext);

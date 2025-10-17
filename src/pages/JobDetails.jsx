@@ -30,8 +30,6 @@ const JobDetails = () => {
         fetchJob()
       }, [id, backendUrl])
 
-      console.log(job)
-
       if(loading) return <p className="text-center fs-2 py-5">Loading...</p>
       if(!job) return <p className="text-center py-5">Job not found.</p>
 
